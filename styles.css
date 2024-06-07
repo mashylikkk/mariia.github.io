@@ -1,0 +1,166 @@
+:root {
+    --ambrosia:           #FCDBBA;
+    --apricot:            #FF8652;
+    --aubergine:          #6A2352;
+    --auburn:             #A12F2F;
+    --asparagus:          #A0C259;
+    --beetroot:           #7F0421;
+    --blue-tack:          #82BFE0;
+    --bloom:              #363A57;
+    --blush:              #D67B71;
+    --bronze:             #C27940;
+    --bud:                #94C15C;
+    --burnt-orange:       #FF5F00;
+    --butter:             #F2C94C;
+    --strawberry-yogurt:  #E4BCAD;
+    --carmine:            #9A133E;
+    --chocolate:          #8F5D38;
+    --chestnut:           #81291F;
+    --clay:               #7D6050;
+    --conker:             #6F3131;
+    --coral:              #EB4444;
+    --dusty-purple:       #7D6391;
+    --dusty-pink:         #E4ADAD;
+    --emerald:            #55B95F;
+    --fern:               #4F8D08;
+    --forest:             #2E644A;
+    --fudge:              #C28742;
+    --grassy:             #A8D363;
+    --green:              #62B90A;
+    --hazelnut:           #D08E5A;
+    --ink:                #292C31;
+    --ivory:              #F2EFE3;
+    --lapis:              #2B4D8D;
+    --leafy:              #318553;
+    --lemon:              #EAFC7E;
+    --lime:               #73D645;
+    --limestone:          #C9C5B5;
+    --magenta:            #BC2767;
+    --meadow:             #7A9A3E;
+    --melon:              #F2994A;
+    --midnight:           #1B3955;
+    --mink:               #E8C9A1;
+    --mint:               #C4EA70;
+    --moss:               #7DB21C;
+    --mushroom:           #EDE8D5;
+    --navy:               #363A57;
+    --orange:             #FD8A04;
+    --pale-lemon:         #F4FFDC;
+    --peach:              #FFB190;
+    --pond-bottom:        #264A46;
+    --powder-blue:        #B5D0E0;
+    --powder-pink:        #FBD1D1;
+    --primrose:           #E1F7B0;
+    --purple:             #A95AF3;
+    --purple-slate:       #545375;
+    --rainforest:         #25422E;
+    --raspberry-jam:      #3C0D2B;
+    --robins-egg:         #B8DEE0;
+    --rouge:              #CC3737;
+    --royal:              #4169E1;
+    --ruby:               #D1314B;
+    --sage:               #87A376;
+    --sakura:             #FFE4E4;
+    --sea-glass:          #7FD1AE;
+    --sea-foam:           #5D998B;
+    --sea-fog:            #758C92;
+    --slate:              #7184A5;
+    --spearmint:          #94E0CF;
+    --spring:             #5ACB65;
+    --succulent:          #83A944;
+    --twilight:           #203763;
+    --vavavoom:           #BF0D0D;
+    --white:              #FFFFFF;
+    --yellow:             #FFE03D;
+    
+    --trans: transparent;
+    --trans05: rgba(255,255,255,0.05);
+    --trans1: rgba(255,255,255,0.1);
+    --trans2: rgba(255,255,255,0.2);
+    --trans4: rgba(255,255,255,0.4);
+  }
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    background: var(--powder-pink);  
+    background-image:    repeating-radial-gradient(
+      circle at 0.5em 0.55em,
+      var(--dusty-pink), 
+      var(--dusty-pink) 0.24em,
+      var(--trans) 0.241em,
+      var(--trans) 4em),
+    repeating-radial-gradient(
+      circle at 0.25em 0.24em,
+      var(--dusty-pink), 
+      var(--dusty-pink) 0.1em,
+      var(--trans) 0.11em,
+      var(--trans) 4em),
+    repeating-radial-gradient(
+      circle at 0.5em 0.15em,
+      var(--dusty-pink), 
+      var(--dusty-pink) 0.1em,
+      var(--trans) 0.11em,
+      var(--trans) 4em),
+    repeating-radial-gradient(
+      circle at 0.75em 0.24em,
+      var(--dusty-pink), 
+      var(--dusty-pink) 0.1em,
+      var(--trans) 0.11em,
+      var(--trans) 4em);
+  background-position: 1em 1em;
+  background-size: 2.5em 2.5em;
+}
+.rectangle {
+    border: 4px solid #abbdf1;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.main-rectangle {
+    width: 547px;
+    height: 1041px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    background-color: #fcdaf1;
+}
+
+.text-meow {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 33.6px;
+    font-family: Arial, sans-serif;
+    color: #1e1e1e;
+    text-align: center;
+    border-style:outset;
+    border-color: #abbdf1;
+    background-color: #fcdaf1;
+}
+
+.small-rectangle {
+    width: 159px;
+    height: 154px;
+    margin: 15px;
+}
+button {
+    background-color: aquamarine;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
